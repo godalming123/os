@@ -31,12 +31,6 @@ def CalcKeys (prime_1, prime_2) :
    x = (public_key * private_key - 1) % totient
  return prime_factor, public_key, private_key
 
-#base file encryption functions
-
-def OperateOnFile (filename, Function, *Propertyes) :
-   file = files.write (filename, Function (files.read (filename),  Propertyes) ))
-   return file
-
 #code
 
 def main () :
