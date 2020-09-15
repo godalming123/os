@@ -8,8 +8,7 @@ def JoinPath (*paths) :
   print (output)
   
 def read (filename):
-  with open (filename, "rb").read() as output :
-    return output
+  return open (filename, "rb").read()
     
 def write (filename, data):
   with open (filename, "wb") as toWrite :
@@ -17,5 +16,5 @@ def write (filename, data):
     return ToWrite
 
 def OperateOnFile (filename, Function, *Propertyes) :
-   file = write (filename, Function (read (filename),  Propertyes) ))
+   file = write (filename, Function (read (filename),  Propertyes) )
    return file
