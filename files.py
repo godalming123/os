@@ -17,5 +17,5 @@ def write (filename, data):
     return ToWrite
 
 def OperateOnFile (filename, Function, *Propertyes) :
-   file = write (filename, Function (files.read (filename),  Propertyes) ))
+   file = write (filename, Function (read (filename),  Propertyes) ))
    return file
