@@ -1,5 +1,6 @@
 from os import *
 DirectoryForUsers = "user data/users"#this is refrenced in over files
+
 def JoinPath (*paths) :
   output = ""
   for path in paths :
